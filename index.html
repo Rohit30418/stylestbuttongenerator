@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div id="particles-js"></div>
+    <h1  class="heading"> Create Cool Button For Your Website</h1>
+    <p class="hint">(Here you can style your button and then copy css code from bottom)</p>
+    <div class="editbtn-cont">
+        <div class="edit-part">
+           <div class="edit-part-head">
+               <button>Button</button>
+           </div>
+
+           <div style="background-color: rgb(235, 235, 235);">
+           <div class="edit-tools">
+           <fieldset class="proredius">
+             <legend>border-radius</legend>
+             <div>
+              <label for="redius">border-top-left-redius</label>
+              <input type="range"  id="redius" max="50" oninput="topleftredius(this)">
+            </div>
+
+
+            <div>
+              <label for="redius">border-top-right-redius</label>
+              <input type="range"  id="redius" max="50" oninput="toprightredius(this)">
+            </div>
+
+
+            <div>
+              <label for="redius">border-bottom-left-redius</label>
+              <input type="range"  id="redius" max="50" oninput="bottomleftredius(this)">
+            </div>
+
+
+            <div>
+              <label for="redius">border-bottom-right-redius</label>
+              <input type="range"  id="redius" max="50" oninput="bottomrightredius(this)">
+            </div>
+           </fieldset>
+
+              
+
+
+            
+
+             <div class="shadowpro">
+                 <fieldset>
+                     <legend>Box-shadow</legend>
+
+                     <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 5px;">
+                       <label for="inset">inset</label>
+                       <input type="checkbox" name="" id="inset">
+                     </div>
+    
+                      <div>
+                        <label for="shadowx">x-axis</label>
+                        <input type="range" max="50" min="-50"  id="shadowx" oninput="shadowpro()">
+                      </div>
+    
+                      <div>
+                        <label for="shadowy">y-axis</label>
+                        <input type="range" max="50" min="-50"  id="shadowy" oninput="shadowpro()">
+                      </div>
+    
+                      <div>
+                        <label for="shadowblur">blur</label>
+                        <input type="range" max="50"  id="shadowblur" oninput="shadowpro()">
+                      </div>
+    
+                      <div>
+                        <label for="shadowspread">spread</label>
+                        <input type="range" max="20"   id="shadowspread" oninput="shadowpro()">
+                      </div>
+    
+                      <div>
+                        <label for="shadowcolor">shadow-color</label>
+                        <input type="color"  id="shadowcolor" oninput="shadowpro()">
+                      </div>
+                 </div>
+                 </fieldset>
+                  
+
+                
+      
+                
+           </div>
+               
+           <fieldset class="border">
+             <legend>border-property</legend>
+             <div>
+              <label for="border-width">width</label>
+              <input type="range" max="10" name="" id="border-width" onchange="borderpro();">
+             </div>
+
+             <div>
+
+               <select name="" id="border-type" style="margin: 10px 0px;"onchange="borderpro()">
+                 <option value="solid">solid</option>
+                 <option value="double">double</option>
+                 <option value="inset">inset</option>
+                 <option value="outset">outset</option>
+
+               </select>
+             </div>
+
+             <div>
+              <label for="border-color">border-color</label>
+              <input type="color" name="" id="border-color" oninput="borderpro()">
+             </div>
+
+           </fieldset>
+
+           <fieldset class="otherproperty">
+           
+            <div>
+              <label for="text">text</label>
+              <input style="padding: 5px;" type="search" name="" id="text" placeholder="change button text here" oninput="cngtext(this)">
+            </div>
+
+            <div>
+              <label for="redius">padding</label>
+              <input type="range"  id="width" min="0" max="20" oninput="btnwidth(this)">
+            </div>
+
+             <legend>otherproperty</legend>
+             <div>
+              <label for="bgcolour">background-color</label>
+              <input type="color"  id="bgcolour" oninput="bgcolor(this)">
+            </div>
+
+            <div>
+              <label for="txtcolor">text-color</label>
+              <input type="color"  id="txtcolor" oninput="textcolor(this)">
+            </div>
+           </fieldset>
+
+           <div class="csscode">
+             <p style="padding: 10px 0px; color: white;">copy code from here :)</p>
+             <p>padding: <span class="width">0</span><span>px;</span></p>
+             <p>color: <span class="text-color">#000000</span>;</p>
+             <p>border-top-left-redius: <span class="tlradius">0</span><span>px;</span></p>
+             <p>border-top-right-redius: <span class="trradius">0</span><span>px;</span></p>
+             <p>border-bottom-left-redius: <span class="blradius">0</span><span>px;</span></p>
+             <p>border-bottom-right-redius: <span class="brradius">0</span><span>px;</span></p>
+             <p>box-shadow: <span class="shadow">0px 0px 0px 0px #ffffff;</span></p>
+             <p>background-color: <span class="bgcolor">#ffffff</span>;</p>
+
+
+
+           </div>
+           </div>
+
+        </div>
+    </div>
+    <footer>Created by rohit pant</footer>
+
+  
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

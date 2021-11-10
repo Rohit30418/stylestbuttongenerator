@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(17, 1, 17);
+    position: relative;
+}
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.heading{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+}
+
+.hint{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    padding: 10px 0px;
+}
+
+.editbtn-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+ input{
+    width: 100%;
+}
+
+fieldset{
+    font-size: 18px;
+    color: rgb(1, 153, 199);
+}
+
+label{
+    font-size: 18px;
+    color: rgb(1, 153, 199);
+}
+
+.editbtn-cont .edit-part{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius:10px;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.6);
+    position: relative;
+    background-color: rgb(235, 235, 235);
+}
+
+.editbtn-cont .edit-part::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    filter: blur(1.3px);
+    height: 100%;
+    top:0px;
+    left: 0px;
+    width: 6px;
+    border-radius: 10px;
+}
+
+.editbtn-cont .edit-part::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    filter: blur(1.3px);
+    height: 6px;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.editbtn-cont .edit-part .edit-part-head{
+    width: 100%;
+    background-color: rgb(164, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.editbtn-cont .edit-part .edit-part-head button{
+    width: 100%;
+    max-width: 100px;
+    min-width: 30px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.edit-tools{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+.shadowpro fieldset{
+    padding: 10px 0px;
+}
+
+.proredius{
+    padding: 10px 0px;
+}
+
+.otherproperty{
+    padding: 10px 0px;
+}
+
+.csscode{
+    background-color: black;
+    color: cadetblue;
+    font-size: 17px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    font-size: 17px;
+}
